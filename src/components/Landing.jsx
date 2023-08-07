@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { tabs } from "../utils/constants.js";
+import Header from "./Header.jsx";
 import Tab from "./Tab";
 import Home from "./Home";
 import About from "./About";
@@ -7,7 +8,7 @@ import IntroductoryOffer from "./IntroductoryOffer";
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
 import ErrorPage from "./ErrorPage";
-import "../sass/landingPage.css";
+import "../sass/landingPage.scss";
 
 const Landing = () => {
   const [tab, setTab] = useState(tabs.home);
@@ -20,6 +21,7 @@ const Landing = () => {
   return (
     <>
       {!error && <div className="landing">
+        <Header />
         <div className="tab-container">
           {Object.keys(tabs).map(key => <Tab key={key} label={tabs[key]} selectedTab={tab} onClick={handleTabClick}/>)}
         </div>

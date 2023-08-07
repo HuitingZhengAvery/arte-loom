@@ -2,12 +2,12 @@ const Tab = ({ label, selectedTab, onClick }) => {
     const isSelected = selectedTab === label;
   
     return (
-      <div
+      <button
         className={`tab ${isSelected ? 'active' : ''}`}
         onClick={() => onClick(label)}
       >
         {label}
-      </div>
+      </button>
     );
   };
 

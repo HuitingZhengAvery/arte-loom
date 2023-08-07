@@ -1,6 +1,8 @@
 const Home = () => {
     return (
-        <div>home</div>
+        <div className="home">
+            <div className="bg"></div>
+            <div className="slogan">Serenity Within, Elegance All Around</div></div>
     )
 }
 

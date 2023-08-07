@@ -1,0 +1,113 @@
+$background-color: rgba(250, 247, 236, 1); // Adjust the alpha value (0.0 to 1.0) for opacity
+
+
+body {
+    background-color: $background-color;
+    margin: 0;
+    padding: 2vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+$content-proportion: 0.8; // Adjust this value to set the desired proportion (e.g., 0.1 = 10%)
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    // height: calc(100vh * #{$content-proportion});
+    // width: calc(100vw * #{$content-proportion});
+    margin: 0;
+    height: 100vh;
+
+    // box-sizing: border-box;
+    padding: 5vh 5vw 5vh 5vw; // Adjust this value to set the desired padding around the content
+}
+
+.header {
+    font-family: 'Indie Flower', cursive;
+    font-size: 5vh;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    padding: 5vh 5vw 5vh 5vw;
+    color: rgb(46, 46, 47, 0.8);
+    // align-items: center;
+}
+
+.tab-container {
+    display: flex;
+    justify-content: right;
+    padding: 2vh;
+}
+
+.tab {
+    margin-left: 2vh;
+}
+
+.main-content {
+    padding: 4vh 2vw 4vh 2vw;
+    flex: 1;
+}
+
+.home {
+
+
+    /* Additional styles for the container */
+    width: 100%;
+    height: 100%;
+    //   height: 400px; // Adjust the height as needed
+    font-family: 'Open Sans', cursive;
+    font-size: 5vh;
+    font-weight: 500;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+
+}
+.bg {
+    /* Set the background image URL */
+    background-image: url('./headline.png');
+    border-radius: 3vh;
+
+    /* Optional: Set background properties like size, repeat, and position */
+    background-size: cover; // Adjust as needed
+    background-repeat: no-repeat; // Adjust as needed
+    background-position: center center; // Adjust as needed
+    position: relative;
+
+    /* Additional styles for the container */
+    width: 100%;
+    height: 100%;
+    //   height: 400px; // Adjust the height as needed
+    font-family: 'Open Sans', cursive;
+    font-size: 5vh;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // padding: 5vh 5vw 5vh 5vw;
+    z-index: -2;
+    opacity: 0.5
+}
+
+.slogan {
+    position:absolute;
+    left: 45%;
+    top: 50%;
+    color: rgb(46, 46, 47);
+    z-index: 1;
+}
+
+button {
+    border: none;
+    background-color: $background-color;
+}
