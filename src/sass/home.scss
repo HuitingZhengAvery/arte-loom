@@ -1,0 +1,62 @@
+@import 'variables';
+.home {
+
+
+    /* Additional styles for the container */
+    width: 100%;
+    height: 100%;
+    //   height: 400px; // Adjust the height as needed
+    font-family: 'Open Sans', cursive;
+    font-size: 5vh;
+    font-weight: 500;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+
+}
+.bg {
+    /* Set the background image URL */
+    background-image: url('./headline.png');
+    border-radius: 3vh;
+
+    /* Optional: Set background properties like size, repeat, and position */
+    background-size: cover; // Adjust as needed
+    background-repeat: no-repeat; // Adjust as needed
+    background-position: center center; // Adjust as needed
+    position: relative;
+
+    /* Additional styles for the container */
+    width: 100%;
+    height: 100%;
+    //   height: 400px; // Adjust the height as needed
+    font-family: 'Open Sans', cursive;
+    font-size: 5vh;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // padding: 5vh 5vw 5vh 5vw;
+    z-index: -2;
+    opacity: 0.5
+}
+
+.slogan {
+    position:absolute;
+    left: 45%;
+    top: 50%;
+    color: $font-color;
+    z-index: 1;
+      /* Set initial state for the slogan */
+  opacity: 0;
+  transform: translateY(50px);
+
+  /* Add transition for smooth animation */
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Use the following selector to target the slogan when it comes into view */
+.home.in-view .slogan {
+    /* Set the final state for the slogan when it's in view */
+    opacity: 1;
+    transform: translateY(0);
+  }
