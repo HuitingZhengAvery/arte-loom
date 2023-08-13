@@ -5,19 +5,20 @@ const Home = () => {
     const [isSloganInView, setIsSloganInView] = useState(false);
 
     useEffect(() => {
-        const checkSloganInView = () => {
-            if (sloganRef.current) {
-                const rect = sloganRef.current.getBoundingClientRect();
-                const isInView = rect.top >= 0 && rect.bottom <= window.innerHeight;
-                setIsSloganInView(isInView);
-            }
-        };
-        window.addEventListener('scroll', checkSloganInView);
+        setIsSloganInView(true);
+        // const checkSloganInView = () => {
+        //     if (sloganRef.current) {
+        //         const rect = sloganRef.current.getBoundingClientRect();
+        //         const isInView = rect.top >= 0 && rect.bottom <= window.innerHeight;
+        //         setIsSloganInView(isInView);
+        //     }
+        // };
+        // window.addEventListener('scroll', checkSloganInView);
 
-        // Clean up the event listener when the component unmounts
-        return () => {
-            window.removeEventListener('scroll', checkSloganInView);
-        };
+        // // Clean up the event listener when the component unmounts
+        // return () => {
+        //     window.removeEventListener('scroll', checkSloganInView);
+        // };
     }, []);
     return (
         <div className={`home ${isSloganInView ? 'in-view' : ''}`}>

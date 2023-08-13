@@ -1,6 +1,7 @@
+import { labels } from "../utils/constants";
 const Header = () => {
     return (
-        <div className="header">ArtéLoom Interior Design</div>
+        <div className="header">{labels.headline}</div>
     )
 }
 

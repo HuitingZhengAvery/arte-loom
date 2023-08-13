@@ -51,12 +51,12 @@
   transform: translateY(50px);
 
   /* Add transition for smooth animation */
-  transition: opacity 1s ease, transform 1s ease;
+  transition: opacity 2s ease, transform 2s ease;
 }
 
 /* Use the following selector to target the slogan when it comes into view */
 .home.in-view .slogan {
     /* Set the final state for the slogan when it's in view */
-    opacity: 1;
+    opacity: 2;
     transform: translateY(0);
   }
