@@ -4,7 +4,7 @@ body {
     background-color: $background-color;
     margin: 0;
     padding: 2vh;
-    font-family: 'Open Sans','Arial','sans-serif',
+    font-family: 'Proxima Nova','Open Sans','Arial','sans-serif',
         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -43,7 +43,7 @@ body {
     flex: 1;
 }
 
-button {
+button.tab {
     border: none;
     cursor: pointer;
     background-color: $background-color;
@@ -72,5 +72,20 @@ button {
         &::before {
             width: 100%;
         }
+    }
+}
+
+button.submit {
+    margin-top: 1vh;
+    padding: 0.8vh;
+    font-size: 1em;
+    font-weight: 550;
+    border-radius: 0.5vh;
+    border: 2px solid $underline-color;
+    border-color: $underline-color;
+    background-color: $background-color;
+    &:hover {
+        cursor: pointer;
+        background-color: $underline-color; // Change to your desired text color on hover
     }
 }

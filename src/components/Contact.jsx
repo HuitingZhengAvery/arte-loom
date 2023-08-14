@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
-import emailjs from 'emailjs-com'; 
+import emailjs from 'emailjs-com';
 import '../sass/contact.scss'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
+    from_name: '',
+    communicationMethod: 'Email',
     email: '',
     message: '',
+    phone: ''
   });
 
   const handleChange = (event) => {
@@ -32,8 +34,10 @@ const Contact = () => {
       // Clear the form data after sending the email
       setFormData({
         from_name: '',
+        communicationMethod: 'Email',
         email: '',
         message: '',
+        phone: ''
       });
     } catch (error) {
       console.error('Error sending email:', error);
@@ -42,21 +46,33 @@ const Contact = () => {
 
   return (
     <div className="contact">
-      <h2>Contact Us</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="name">What name may I use to address you?</label>
           <input
             type="text"
             id="name"
-            name="name"
+            name="from_name"
             value={formData.from_name}
             onChange={handleChange}
             required
           />
         </div>
         <div className="form-group">
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="communicationMethod">Preferred Communication Method</label>
+          <select
+            id="communicationMethod"
+            name="communicationMethod"
+            value={formData.communicationMethod}
+            onChange={handleChange}
+          >
+            <option value="Email">Email</option>
+            <option value="Text Message">Text Message</option>
+            <option value="Phone Call">Phone Call</option>
+          </select>
+        </div>
+        {formData.communicationMethod === 'Email' ? (<div className="form-group">
+          <label htmlFor="email">Email</label>
           <input
             type="email"
             id="email"
@@ -65,9 +81,20 @@ const Contact = () => {
             onChange={handleChange}
             required
           />
-        </div>
+        </div>): (<div className="form-group">
+          <label htmlFor="email">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+            required
+          />
+        </div>)}
+
         <div className="form-group">
-          <label htmlFor="message">Message:</label>
+          <label htmlFor="message">Message</label>
           <textarea
             id="message"
             name="message"
@@ -76,7 +103,7 @@ const Contact = () => {
             required
           ></textarea>
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" className='submit'>Submit</button>
       </form>
     </div>
   );

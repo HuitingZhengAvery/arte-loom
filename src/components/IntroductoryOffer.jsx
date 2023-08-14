@@ -1,6 +1,13 @@
 const IntroductoryOffer = () => {
     return (
-        <div>intro</div>
+        <div className="intro">
+            <div className="ad">
+
+            </div>
+            <div>
+                
+            </div>
+        </div>
     )
 }
 
