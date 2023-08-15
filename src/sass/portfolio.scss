@@ -1,0 +1,26 @@
+@import "variables";
+.lead {
+    padding-left: 10vh;
+    padding-right: 10vh;
+    color: $font-color-full;
+    font-style: italic;
+    font-weight: 530;
+    font-size: 1.1em;
+}
+
+.switch-tab {
+    color: #EB8A3F;
+    cursor: pointer;
+}
+.images {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8vh;
+    align-items: center;
+}
+img.portfolio {
+    max-width: 40vw;
+    height: auto;
+    margin-bottom: 5vh;
+    border-radius: 1vh;
+}

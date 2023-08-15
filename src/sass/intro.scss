@@ -1,5 +1,45 @@
+@import 'variables';
 .intro {
     padding-left: 10vh;
     padding-right: 10vh;
     color: $font-color-full
+}
+
+.ad {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center !important;
+    // align-items: center !important;
+}
+
+.headline {
+    font-weight: 550 !important;
+    font-size: 1.2em !important;
+    color: #EB8A3F;
+}
+
+.headline,
+.description {
+    margin-bottom: 2em;
+}
+
+.item-icon {
+    height: 1em;
+    width: auto;
+    margin-right: 1em;
+}
+
+.item {
+    margin-bottom: 2em !important;
+}
+
+.end {
+    font-style:italic;
+    font-weight: 550;
+}
+
+.contact-link {
+    color: #EB8A3F;
+    cursor: pointer;
 }

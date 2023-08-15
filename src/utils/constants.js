@@ -19,3 +19,16 @@ export const about = ["Welcome to our passionately driven interior design oasis,
     "ArtéLoom becomes your voyage partner, weaving spaces that mirror your identity. Discover the alchemy of design that weds aesthetics and intention – creating sanctuaries where comfort and purpose dance, elevating the tapestry of your days.",
     "Here, you step into a universe of inspirational design, where each space whispers tales of life's greatest instances, and where you are the heartbeat of every creation."
 ]
+
+export const eligibility = [
+    "You\'d like to upgrade a residential space, i.e. Bathroom, Kitchen, Bedroom, etc",
+    "You are located in Mill Creek, South Everett (Preferably south of Forest Park), Lynnwood, or North Creek",
+    "You are able to kickoff the rennovation project as soon as possible"
+]
+
+export const benefits = [
+    "No hidden fee - If we quote you for $300, all you pay for the design fee is $300",
+    "Free initial phone / video call consultation before you decide whether to take this offer",
+    "Project management and working drawings (if necessary)",
+    "We handle your finances with the same care as if they were our own - We do not have any corporating builder company, we try our best to select the most suitable contractor(s) for you"
+]
