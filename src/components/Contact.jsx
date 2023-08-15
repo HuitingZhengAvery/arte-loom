@@ -11,6 +11,8 @@ const Contact = () => {
     phone: ''
   });
 
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevData) => ({
@@ -29,7 +31,9 @@ const Contact = () => {
       const userId = 's5vy3rNMyHauCUjiY';
 
       const response = await emailjs.send(serviceId, templateId, formData, userId);
-      console.log('Email sent:', response);
+      if (response.status === 200) {
+        setIsSubmitted(true);
+      }
 
       // Clear the form data after sending the email
       setFormData({
@@ -105,6 +109,7 @@ const Contact = () => {
         </div>
         <button type="submit" className='submit'>Submit</button>
       </form>
+      {isSubmitted && <div className='submitted'>Thank you for contacting us, we will be in touch within 1 business day</div>}
     </div>
   );
 };

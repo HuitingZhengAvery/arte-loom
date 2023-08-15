@@ -23,7 +23,6 @@ const Portfolio = ({setTab}) => {
                 <img src={bath} alt="bath" className="portfolio"></img>
             </div>
         </div>
-
     )
 }
 
