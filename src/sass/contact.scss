@@ -2,16 +2,16 @@
 .contact {
     max-width: 60vw;
     margin: 0 auto;
-    padding: 20px;
+    padding: 5vh;
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 3vh;
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 1vh;
     font-weight: 550;
     font-size: 1em;
 }
@@ -21,14 +21,14 @@ input[type="email"],
 input[type="tel"],
 textarea {
     width: 100%;
-    padding: 10px;
+    padding: 1vh;
     border: 1px solid #ccc;
     border-radius: 3px;
 }
 
 select{
     width: 20vw;
-    padding: 10px;
+    padding: 1vh;
     border: 1px solid #ccc;
     border-radius: 3px;
 }

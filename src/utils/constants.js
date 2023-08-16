@@ -21,8 +21,8 @@ export const about = ["Welcome to our passionately driven interior design oasis,
 ]
 
 export const eligibility = [
-    "You\'d like to upgrade a residential space, i.e. Bathroom, Kitchen, Bedroom, etc",
-    "You are located in Mill Creek, South Everett (Preferably south of Forest Park), Lynnwood, or North Creek",
+    "You\'d like to upgrade a residential space, i.e. Bathroom, Kitchen, Bedroom",
+    "You are located in Mill Creek, South Everett (Preferably south of Forest Park), Lynnwood, or North Creek area in Washington State",
     "You are able to kickoff the rennovation project as soon as possible"
 ]
 
