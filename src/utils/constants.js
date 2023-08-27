@@ -1,7 +1,7 @@
 export const tabs = {
     home: "Home",
     about: "About",
-    intro: "Introductory Offer",
+    // intro: "Introductory Offer",
     portfolio: "Portfolio",
     contact: "Contact"
 }

@@ -11,7 +11,7 @@ import ErrorPage from "./ErrorPage";
 import "../sass/landingPage.scss";
 
 const Landing = () => {
-  const [tab, setTab] = useState(tabs.intro);
+  const [tab, setTab] = useState(tabs.home);
   const [error, setError] = useState(false);
 
   const handleTabClick = (tab) => {
@@ -29,7 +29,7 @@ const Landing = () => {
         <div className="main-content">
           {tab === tabs.home && <Home />}
           {tab === tabs.about && <About />}
-          {tab === tabs.intro && <IntroductoryOffer setTab={setTab}/>}
+          {/* {tab === tabs.intro && <IntroductoryOffer setTab={setTab}/>} */}
           {tab === tabs.portfolio && <Portfolio setTab={setTab}/>}
           {tab === tabs.contact && <Contact />}
         </div>
